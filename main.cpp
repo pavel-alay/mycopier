@@ -29,8 +29,6 @@ void timestamp(const string& targetDir, bool isFail) {
 
     if (isFail)
         cout << "[FAIL] Last update: " + ss.str() << endl;
-    else
-        cout << "[OK] Last update: " + ss.str() << endl;
     ofstream outfile (timestamp);
     outfile.close();
 }
